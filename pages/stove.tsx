@@ -157,7 +157,7 @@ const Stove: NextPage = () => {
         <input id='my-drawer' type='checkbox' className='drawer-toggle' />
         <div className='drawer-content bg-rose-900 text-gray-50 tracking-tight text-center'>
           <Navbar sending={sending} />
-          <h2 className='font-bold m-2 mt-10'>🔥 STOVE - YOU'RE GONNA BURN TOKENS. PROCEED WITH CAUTION! 🔥</h2>
+          <h2 className='font-bold m-2 mt-10'>🔥 STOVE - YOU ARE GONNA BURN TOKENS. PROCEED WITH CAUTION! 🔥</h2>
           <div className='w-full mb-4'>
           <h2 className='font-bold text-sm'> HOW MANY :&nbsp;&nbsp;&nbsp; 
           <span className='indicator-item badge bg-amber-500 text-xl'>

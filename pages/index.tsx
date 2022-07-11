@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         </p> */}
 
         <div className='grid'>
-          <a href="bulktransfer" className={styles.card}>
+          <a href="bulktransfer" className={styles.card} >
             <h2 className='font-bold text-sm'> BULK TRANSFER ⚡</h2>
             {/*<p>Transfer more than 1 NFT to another wallet. Fee-free. Gas only.</p>*/}
           </a>
