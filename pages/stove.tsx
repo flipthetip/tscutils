@@ -208,6 +208,7 @@ const Stove: NextPage = () => {
                   address={n.address}
                   mintAddress={n.mintAddress}
                   image={n.image}
+                  showHidden
                     unselect={() => {
                       setSending(sending.filter(item => item !== n))
                     }}
