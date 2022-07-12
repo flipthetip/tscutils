@@ -29,14 +29,14 @@ export const Navbar = props => {
             className='p-2 mt-3 shadow menu menu-compact dropdown-content bg-rose-700 rounded-box w-52'
           >
           <li>
-            <Link href='index'>
+            <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
                 HOME 👻
               </button>
             </Link>
           </li>
         <li>
-            <Link href='stove'>
+            <Link href='stove' passHref>
               <button className='tracking-wide uppercase'>
                 STOVE 🔥
               </button>
@@ -69,14 +69,14 @@ export const Navbar = props => {
       <div className='hidden navbar-center lg:flex'>
         <ul className='p-0 menu menu-horizontal'>
         <li>
-            <Link href='/'>
+            <Link href='/' passHref> 
               <button className='tracking-wide uppercase'>
                 HOME 👻
               </button>
             </Link>
           </li>
         <li>
-            <Link href='stove'>
+            <Link href='stove' passHref>
               <button className='tracking-wide uppercase'>
                 STOVE 🔥
               </button>

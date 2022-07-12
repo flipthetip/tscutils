@@ -157,7 +157,7 @@ const Stove: NextPage = () => {
         <input id='my-drawer' type='checkbox' className='drawer-toggle' />
         <div className='drawer-content bg-rose-900 text-gray-50 tracking-tight text-center'>
           <Navbar sending={sending} />
-          <h2 className='font-bold m-2 mt-10'>🔥 STOVE - YOU'RE GONNA BURN TOKENS. PROCEED WITH CAUTION! 🔥</h2>
+          <h2 className='font-bold m-2 mt-10'>🔥 STOVE - YOU ARE GONNA BURN TOKENS. PROCEED WITH CAUTION! 🔥</h2>
           <div className='w-full mb-4'>
           <h2 className='font-bold text-sm'> HOW MANY :&nbsp;&nbsp;&nbsp; 
           <span className='indicator-item badge bg-amber-500 text-xl'>
@@ -218,11 +218,14 @@ const Stove: NextPage = () => {
                   />
                 ))}
             </div>
-            <h2 className='mt-2 text-xs'>Coded in the Shadows | 👻 TSC Buidl</h2>
-            <a href="discord.gg/b39NXR6">
-          <h2 className='text-xs font-bold mb-6 mt-2'> CLICK HERE TO JOIN OUR DISCORD! ⌛</h2>
-          </a>
+
           </div>
+          <div className='w-full bg-gray-900 text-white p-6 text-center'>
+      <h2 className='mt-2 text-xs w-full'>Coded in the Shadows | 👻 TSC Buidl</h2>
+            <a href="https://discord.gg/b39NXR6">
+          <h2 className='text-xs font-bold mb-2 mt-2'> CLICK HERE TO JOIN OUR DISCORD! ⌛</h2>
+          </a>
+      </div>
         </div>
 
 

@@ -216,12 +216,12 @@ const BulkTransfer: NextPage = () => {
       
       <div className='drawer drawer-end'>
         <input id='my-drawer' type='checkbox' className='drawer-toggle' />
-        <div className='drawer-content bg-gray-900 text-gray-50 tracking-tight text-center'>
+        <div className='drawer-content bg-gray-900 text-white tracking-tight text-center'>
           <Navbar sending={sending} />
           <h2 className='font-bold m-2 mt-10'>⚡ BULK NFT TRANSFER - TRANSFER NFTS TO ANOTHER WALLET FEE-FREE ⚡</h2>
           <div className='w-full mb-4'>
           <h2 className='font-bold text-sm'> HOW MANY :&nbsp;&nbsp;&nbsp; 
-          <span className='indicator-item badge bg-amber-500 text-xl'>
+          <span className='indicator-item badge-lg rounded-full bg-amber-500 text-xl text-white'>
           {sending.length}
           </span></h2>
           <h1 className='mr-10 ml-10 mt-2'>STATUS : {feedbackStatus} </h1>
@@ -231,7 +231,7 @@ const BulkTransfer: NextPage = () => {
             <input
               type='text'
               placeholder='NFT SEARCH..'
-              className='w-8/12 h-fit input input-bordered rounded-none border-black text-gray-600'
+              className='w-8/12 h-80% input input-bordered rounded-none border-black text-black text-lg'
               onChange={e => setSearch(e.target.value)}
             />
           </div>
@@ -293,11 +293,14 @@ const BulkTransfer: NextPage = () => {
                   />
                 ))}
             </div>
-            <h2 className='mt-2 text-xs'>Coded in the Shadows | 👻 TSC Buidl</h2>
-            <a href="discord.gg/b39NXR6">
-          <h2 className='text-xs font-bold mb-6 mt-2'> CLICK HERE TO JOIN OUR DISCORD! ⌛</h2>
-          </a>
+
           </div>
+          <div className='w-full bg-gray-900 text-white p-6 text-center'>
+      <h2 className='mt-2 text-xs w-full'>Coded in the Shadows | 👻 TSC Buidl</h2>
+            <a href="https://discord.gg/b39NXR6">
+          <h2 className='text-xs font-bold mb-2 mt-2'> CLICK HERE TO JOIN OUR DISCORD! ⌛</h2>
+          </a>
+      </div>
         </div>
 
         <div className='drawer-side'>
