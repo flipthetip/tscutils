@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         SHADOW INSTRUMENTS
         </h1>
         
-        <div className='mr-12 mt-4 w-6/12 rounded-none'>
+        <div className='text-center w-9/12' >
               <img src='/arc.png' />
           </div>
 
@@ -30,14 +30,14 @@ const Home: NextPage = () => {
         </p> */}
 
         <div className='grid'>
-          <a href="bulktransfer" className={styles.card} >
+          {/* <a href="bulktransfer" className={styles.card} >
             <h2 className='font-bold text-sm'> BULK TRANSFER ⚡</h2>
-            {/*<p>Transfer more than 1 NFT to another wallet. Fee-free. Gas only.</p>*/}
+            <p>Transfer more than 1 NFT to another wallet. Fee-free. Gas only.</p>
           </a>
 
-          <a href="stove" className={styles.card}>
+          <a href="/" className={styles.card}>
           <h2 className='font-bold'> STOVE /BURN/ 🔥</h2>
-            {/*<p>Burn any known/unknown spl-token or NFT.</p>*/}
+            <p>Burn any known/unknown spl-token or NFT.</p>
           </a>
 
           <a
@@ -45,27 +45,34 @@ const Home: NextPage = () => {
             className={styles.card}
           >
           <h2 className='font-bold'> STAKING /$CRIM/ ⛏️</h2>
-            {/*<p>Stake your shadow NFTs for $CRIM token yields.</p>*/}
-          </a>
+            <p>Stake your shadow NFTs for $CRIM token yields.</p>
+          </a> */}
 
           
-          {/*<a href="minthash" className={styles.card}>
-            <h2>Mint Hash Getter&rarr;</h2>
-            <p>Get your mint hash list here, anon!</p>
+          <a href="https://twitter.com/theshadyclass" className={styles.card}>
+            <h2>⚡ FOLLOW US ON TWITTER ⚡<br/></h2>
+            <p>Our Beta test phase is done. <br/> 
+              Click above to know when the next phase will be available!<br/>
+              BULK NFT Transfer and Stove will be back.</p>
           </a>
-
-          <a href="holdersnapshot" className={styles.card}>
-            <h2>Holder Snapshot&rarr;</h2>
-            <p>Get your holder list here, anon!</p>
-          </a>*/}
-          
+          <br/> 
+          <br/> 
+          <br/> 
+          <br/> 
+          <a href="https://magiceden.io/marketplace/tshc" className={styles.card}>
+            <h2>👻 BE A SHADOW 👻<br/> </h2>
+            <p>Check us out on MagicEden!<br/> </p>
+          </a>
+          <br/> 
+          <br/> 
+          <br/> 
 
         </div>
 
       </main>
 
       <div className='w-full bg-gray-900 text-white p-6 text-center'>
-      <h2 className='mt-2 text-xs w-full'>Coded in the Shadows | 👻 TSC Buidl</h2>
+      <h2 className='mt-2 text-xs w-full'>Coded in the Shadows | 👻 TSC Buidl. _A NFT Project.</h2>
             <a href="https://discord.gg/b39NXR6">
           <h2 className='text-xs font-bold mb-2 mt-2'> CLICK HERE TO JOIN OUR DISCORD! ⌛</h2>
           </a>

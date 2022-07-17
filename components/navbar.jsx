@@ -36,14 +36,14 @@ export const Navbar = props => {
             </Link>
           </li>
         <li>
-            <Link href='stove' passHref>
+            <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
                 STOVE 🔥
               </button>
             </Link>
           </li>
           <li>
-            <Link href='bulktransfer' passHref>
+            <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
                 BULK TRANSFER ⚡
               </button>
@@ -76,14 +76,14 @@ export const Navbar = props => {
             </Link>
           </li>
         <li>
-            <Link href='stove' passHref>
+            <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
                 STOVE 🔥
               </button>
             </Link>
           </li>
           <li>
-            <Link href='bulktransfer' passHref>
+            <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
                 BULK TRANSFER ⚡
               </button>
