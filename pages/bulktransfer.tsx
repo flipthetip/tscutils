@@ -75,14 +75,9 @@ const BulkTransfer: NextPage = () => {
     }
 
     const tx = new Transaction()
-    // const tx1 = new Transaction()
-    // const tx2 = new Transaction()
-    // let a = 2
-    // let b = 4
+
     console.log('trying to send ', list.length, ' nfts')
 
-    // for (let z = 0; list.length > b; z + 2) {
-    // for (let y = 0; list.length > a; y + 2) {
     for (let i = 0; i < list.length; i++) 
     {
       const mintPublicKey = new PublicKey(list[i].mintAddress)

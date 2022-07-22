@@ -263,21 +263,21 @@ const Stove: NextPage = () => {
             </div>
 
 
-          <div className='ml-6 mr-6 mb-20 grid grid-cols-2 gap-1 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
+          {/* <div className='ml-6 mr-6 mb-20 grid grid-cols-2 gap-1 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
               {nfts
                 .filter(n => n.name.toLowerCase().includes(search.toLowerCase()))
-                // .reduce((x, y) => {
-                // let nepti = y.name
-                // if  (nepti in x) {
-                //   return {...x, [nepti]: x[nepti].concat(y)
-                //   }
-                // }
-                // return {...x, [nepti]: [y]}
-                //   },
-                // {}
+                .reduce((x, y) => {
+                let nepti = y.name
+                if  (nepti in x) {
+                  return {...x, [nepti]: x[nepti].concat(y)
+                  }
+                }
+                return {...x, [nepti]: [y]}
+                  },
+                {}
 
                 
-                // )
+                )
 
                 .map(n => (
                   <NftRow
@@ -325,7 +325,7 @@ const Stove: NextPage = () => {
                     selected={sending.includes(n)}
                   />
                 ))}
-            </div>
+            </div> */}
 
           </div>
           <a href="https://discord.gg/7SrNbVyHDD">
