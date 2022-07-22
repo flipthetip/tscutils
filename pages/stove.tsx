@@ -175,21 +175,21 @@ const Stove: NextPage = () => {
             {!connected && (<h1>HOLDER VERIFICATION</h1>)}
             { connected && (<>
             <h1 className='font-bold text-xs'>Wallet: {publicKey?.toBase58()}</h1>
-            {allowed ? <h1 className='text-sm text-green-500 mr-12'>You're a verified holder! Your support will help us build more fun stuff in Solana. 🔥 Also, you'll pass token-gating if we ever implement it.  ✅</h1>
+            {allowed ? <h1 className='text-sm text-green-500 mr-12'>You are a verified holder! Your support will help us build more fun stuff in Solana. 🔥 Also, you will pass token gating if we ever implement it.  ✅</h1>
             : 
             <a
             href="https://magiceden.io/marketplace/tshc"
             >
-            <h1 className='text-sm text-red-500 font-bold  mr-12'>You don't hold any TSC NFT. 👻 As we might token-gate our features in the near-future, click here to get one in secondary.</h1>
+            <h1 className='text-sm text-red-500 font-bold  mr-12'>You do not hold any TSC NFT. 👻 As we might token gate our features in the near future, click here to get one in secondary.</h1>
             </a>}
             </>)
             }
           </div>
           <p className='m-2 mt-6 ml-10 text-left text-xs tracking-wider'>
             Notes:<br/>
-            1. &nbsp;Current version has a 6-12hour lag of the burned NFTs to disappear from the site list. Trying to burn it again will just fail.<br/>
-            2. &nbsp;If you don't know yet, burned NFTs refund the "on-chain rent" SOL back to your wallet.<br/>
-            3. &nbsp;IMPORTANT! Burning is permanent! Make sure you're burning the correct NFTs.
+            1. &nbsp;Current version has a 6 to 12hour lag of the burned NFTs to disappear from the site list. Trying to burn it again will just fail.<br/>
+            2. &nbsp;If you don not know yet, burned NFTs refund the on-chain rent SOL back to your wallet.<br/>
+            3. &nbsp;IMPORTANT! Burning is permanent! Make sure you are burning the correct NFTs.
             </p>
           <h2 className='font-bold m-2 mt-6'>🔥 STOVE - YOU ARE GONNA BURN TOKENS. PROCEED WITH CAUTION! 🔥</h2>
           <div className='w-full mb-4'>

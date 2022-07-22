@@ -250,20 +250,20 @@ const [allowed, setAllowed] = useState(false)
             {!connected && (<h1>HOLDER VERIFICATION</h1>)}
             { connected && (<>
             <h1 className='font-bold text-xs'>Wallet: {publicKey?.toBase58()}</h1>
-            {allowed ? <h1 className='text-sm text-green-500 mr-12'>You're a verified holder! Your support will help us build more fun stuff in Solana. 🔥 Also, you'll pass token-gating if we ever implement it.  ✅</h1>
+            {allowed ? <h1 className='text-sm text-green-500 mr-12'>You are a verified holder! Your support will help us build more fun stuff in Solana. 🔥 Also, you will pass token gating if we ever implement it.  ✅</h1>
             : 
             <a
             href="https://magiceden.io/marketplace/tshc"
             >
-            <h1 className='text-sm text-red-500 font-bold mr-12'>You don't hold any TSC NFT. 👻 As we might token-gate our features in the near-future, click here to get one in secondary.</h1>
+            <h1 className='text-sm text-red-500 font-bold  mr-12'>You do not hold any TSC NFT. 👻 As we might token gate our features in the near future, click here to get one in secondary.</h1>
             </a>}
             </>)
             }
           </div>
           <p className=' m-2 mt-6 ml-10 text-left text-xs tracking-wider'>
             Notes:<br/>
-            1. &nbsp;Current test-version supports up to 7-8 NFT transfer at a time. Live version supports unlimited transfers for TSC NFT holders.<br/>
-            2. &nbsp;All transactions are fee-free. You only pay gas.<br/>
+            1. &nbsp;Current test version supports up to 7-8 NFT transfer at a time. Live version supports unlimited transfers for TSC NFT holders.<br/>
+            2. &nbsp;All transactions are fee free. You only pay gas.<br/>
             3. &nbsp;Unnamed NFTs are those who were most likely setup and minted in LMNFT.
             </p>
           <h2 className='font-bold m-2 mt-6'>⚡ BULK NFT TRANSFER - TRANSFER NFTS TO ANOTHER WALLET FEE-FREE ⚡</h2>
