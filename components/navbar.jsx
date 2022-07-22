@@ -5,8 +5,8 @@ import { useState } from 'react'
 
 export const Navbar = props => {
   return (
-    <div className='navbar bg-black text-white pr-6'>
-      <div className='navbar-start'>
+    <div className='navbar bg-none text-white text-xs max-h-1 md:pl-2 pr-12'>
+      <div className='navbar-start'>       
         <div className='dropdown'>
           <label tabIndex='0' className='btn btn-ghost lg:hidden'>
             <svg
@@ -23,10 +23,12 @@ export const Navbar = props => {
                 d='M4 6h16M4 12h8m-8 6h16'
               />
             </svg>
+
           </label>
+
           <ul
             tabIndex='0'
-            className='p-2 mt-3 shadow menu menu-compact dropdown-content bg-rose-700 rounded-box w-52'
+            className='p-1 mt-2 shadow menu menu-compact dropdown-content bg-red-500 rounded-box w-52 pr-0'
           >
           <li>
             <Link href='/' passHref>
@@ -36,14 +38,14 @@ export const Navbar = props => {
             </Link>
           </li>
         <li>
-            <Link href='/' passHref>
+            <Link href='stove' passHref>
               <button className='tracking-wide uppercase'>
                 STOVE 🔥
               </button>
             </Link>
           </li>
           <li>
-            <Link href='/' passHref>
+            <Link href='bulktransfer' passHref>
               <button className='tracking-wide uppercase'>
                 BULK TRANSFER ⚡
               </button>
@@ -56,8 +58,22 @@ export const Navbar = props => {
               </button>
             </Link>
           </li>
+          <li>
+            <Link href='http://collector.theshadyclass.xyz/' passHref>
+              <button className='tracking-wide uppercase'>
+                COLLECTOR 💎
+              </button>
+            </Link>
+          </li>
+          <li>
+            <Link href='https://magiceden.io/marketplace/tshc' passHref>
+              <button className='tracking-wide uppercase'>
+                MAGICEDEN ✨
+              </button>
+            </Link>
+          </li>
             <li>
-              <WalletMultiButton />
+            <WalletMultiButton className='max-h-5' />
             </li>
             <div className='mr-16 mt-4 w-full rounded-none content-center text-xs mb-2'>
             Coded in the Shadows | 👻 TSC Buidl
@@ -66,33 +82,50 @@ export const Navbar = props => {
         </div>
 
       </div>
-      <div className='hidden navbar-center lg:flex'>
-        <ul className='p-0 menu menu-horizontal'>
+
+      <div className='bg-red-700 hidden navbar-center lg:flex rounded-box'>
+        
+        <ul className='shadow-white menu menu-horizontal'>
+
         <li>
             <Link href='/' passHref> 
               <button className='tracking-wide uppercase'>
-                HOME 👻
+                HOME
               </button>
             </Link>
           </li>
         <li>
-            <Link href='/' passHref>
+            <Link href='stove' passHref>
               <button className='tracking-wide uppercase'>
-                STOVE 🔥
+                STOVE
               </button>
             </Link>
           </li>
           <li>
-            <Link href='/' passHref>
+            <Link href='bulktransfer' passHref>
               <button className='tracking-wide uppercase'>
-                BULK TRANSFER ⚡
+                BULK TRANSFER
               </button>
             </Link>
           </li>
           <li>
             <Link href='https://staking.theshadyclass.xyz/' passHref>
               <button className='tracking-wide uppercase'>
-                STAKING ⛏️
+                STAKING
+              </button>
+            </Link>
+          </li>
+          <li>
+            <Link href='http://collector.theshadyclass.xyz/' passHref>
+              <button className='tracking-wide uppercase'>
+                COLLECTOR 🔥
+              </button>
+            </Link>
+          </li>
+          <li>
+            <Link href='https://magiceden.io/marketplace/tshc' passHref>
+              <button className='tracking-wide uppercase'>
+                MAGICEDEN ✨
               </button>
             </Link>
           </li>
@@ -133,7 +166,9 @@ export const Navbar = props => {
           </li> 
 */}
           <li>
-            <WalletMultiButton />
+
+            <WalletMultiButton className='max-h-5' />
+
           </li>
 
         </ul>

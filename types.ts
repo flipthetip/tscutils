@@ -3,6 +3,22 @@ export interface Owner {
     associatedTokenAccountAddress: string
   }
 
+export interface third {
+  address: string
+  associatedTokenAccountAddress: string
+}
+
+  export interface thirdNft {
+    symbol: String
+    name: string
+    address: string
+    description: string
+    image: string
+    mintAddress: string
+    thirdowner: Owner
+    updateAuthority: string
+  }
+
   export interface Nft {
     symbol: String
     name: string

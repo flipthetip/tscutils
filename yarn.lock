@@ -3377,6 +3377,11 @@
   "resolved" "https://registry.npmjs.org/graphql/-/graphql-16.4.0.tgz"
   "version" "16.4.0"
 
+"groupby-js@^1.1.9":
+  "integrity" "sha512-u+xjzKVIY+m8q9Kttobfb0Fyipbp9D6BKT/zo4wP0NSDCMw1oVPPUeN+28o9to75Ov/Yo/NZACCAk6fmYz/4+A=="
+  "resolved" "https://registry.npmjs.org/groupby-js/-/groupby-js-1.1.9.tgz"
+  "version" "1.1.9"
+
 "hamt-sharding@^2.0.0":
   "integrity" "sha512-vnjrmdXG9dDs1m/H4iJ6z0JFI2NtgsW5keRkTcM85NGak69Mkf5PHUqBz+Xs0T4sg0ppvj9O5EGAJo40FTxmmA=="
   "resolved" "https://registry.npmjs.org/hamt-sharding/-/hamt-sharding-2.0.1.tgz"

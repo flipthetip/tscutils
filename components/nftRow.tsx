@@ -15,6 +15,7 @@ interface NftRowProps {
   showHidden?: Boolean
   owner?: string
   address: string
+  symbol: String
 }
 
 export const NftRow = (props: NftRowProps) => {

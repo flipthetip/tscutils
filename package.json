@@ -30,6 +30,7 @@
     "formidable": "^2.0.1",
     "fs": "^0.0.1-security",
     "graphql": "^16.4.0",
+    "groupby-js": "^1.1.9",
     "mime": "^3.0.0",
     "next": "12.0.10",
     "nextjs-cors": "^2.1.1",
