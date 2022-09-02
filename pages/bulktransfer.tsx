@@ -20,20 +20,27 @@ import {Nft} from '../types'
 const approvedAccounts = ['Web3 Chibis in the Solana network. 3,333 chibified avatars ready to take on the metaverse and save the decentralization movement. The Shady Class is the OG NFT Collection under under W3B Industries.']
 
 
-const BulkTransfer: NextPage = () => {
+const BulkTransfer : NextPage = () => {
 
-  const { publicKey, signTransaction, connected } = useWallet()
-  const { connection } = useConnection()
-  const [nfts, setNfts] = useState<Nft[]>([])
-  const [sending, setSending] = useState<Nft[]>([])
-  const [to, setTo] = useState('')
-  const [search, setSearch] = useState('')
-  const [loading, setLoading] = useState<boolean>(false)
+  const { publicKey, signTransaction, connected } = useWallet()	
+  const { connection } = useConnection()	
+  const [nfts, setNfts] = useState<Nft[]>([])	
+  const [sending, setSending] = useState<Nft[]>([])	
+  const [to, setTo] = useState('')	
+  const [search, setSearch] = useState('')	
+  const [loading, setLoading] = useState<boolean>(false)	
   const [feedbackStatus, setFeedbackStatus] = useState("")
+  // if (sending.length > 7) {	
+  //   toast(	
+  //     `Warning! You may not be able to send ${sending.length} NFTs in one transaction. Send fewer NFTs to ensure success`,	
+  //     {	
+  //       toastId: 'TooManyNFTs'	
+  //     }	
+  //   )	
+  // }	
+  const massSend = async (list: Nft[], to: string) => {	
+    setLoading(true)	
 
-  const massSend = async (list: Nft[], to: string) => {
-    setLoading(true)
-    
     if (to == '') {
       toast.error('no dest')
       setLoading(false)
@@ -67,118 +74,97 @@ const BulkTransfer: NextPage = () => {
         feedbackStatus,
       }
     }
-
-    if (!list.length) {
-      console.log('probably want to select some nfts')
-      setLoading(false)
-
-    }
-
-    const tx = new Transaction()
-
-    console.log('trying to send ', list.length, ' nfts')
-
-    for (let i = 0; i < list.length; i++) 
-    {
-      const mintPublicKey = new PublicKey(list[i].mintAddress)
-      const fromTokenAccount = await getAssociatedTokenAddress(
-        mintPublicKey,
-        publicKey
-        
-      )
-      const fromPublicKey = publicKey
-      const destPublicKey = new PublicKey(to)
-      const destTokenAccount = await getAssociatedTokenAddress(
-        mintPublicKey,
-        destPublicKey
-      )
-      const receiverAccount = await connection.getAccountInfo(destTokenAccount)
-
-      if (receiverAccount === null) {
-        tx.add(
-          createAssociatedTokenAccountInstruction(
-            fromPublicKey,
-            destTokenAccount,
-            destPublicKey,
-            mintPublicKey,
-            TOKEN_PROGRAM_ID,
-            ASSOCIATED_TOKEN_PROGRAM_ID
-          )
-        )
-      }
-
-      tx.add(
-        createTransferInstruction(
-          fromTokenAccount,
-          destTokenAccount,
-          fromPublicKey,
-          1
-        )
-      )
-  
-
-      setFeedbackStatus("💪 Werkin hard for you ser...")
-  }
-
-   
-    tx.recentBlockhash = (await connection.getLatestBlockhash()).blockhash
-    tx.feePayer = publicKey
-    setFeedbackStatus("✍️ SIGN yer Phantom ser..")
+    if (!list.length) {	
+      console.log('probably want to select some nfts')	
+      setLoading(false)	
+      return	
+    }	
+    setFeedbackStatus(`Processing ${list.length} send request..`)	
+    setFeedbackStatus(`✍️ Sending in ${Math.ceil(list.length / 8)} packages..`)	
     
-    let signed: Transaction | undefined = undefined
+    for (var i = 0; i < list.length / 8; i++) {	
+      const tx = new Transaction()	
+      for (var j = 0; j < 8; j++) {	
+        if (list[i * 8 + j]) {	
+          const mintPublicKey = new PublicKey(list[i * 8 + j].mintAddress)	
+          const fromTokenAccount = await getAssociatedTokenAddress(	
+            mintPublicKey,	
+            publicKey	
+          )	
+          const fromPublicKey = publicKey	
+          const destPublicKey = new PublicKey(to)	
+          const destTokenAccount = await getAssociatedTokenAddress(	
+            mintPublicKey,	
+            destPublicKey	
+          )	
+          const receiverAccount = await connection.getAccountInfo(	
+            destTokenAccount	
+          )	
+          if (receiverAccount === null) {	
+            tx.add(	
+              createAssociatedTokenAccountInstruction(	
+                fromPublicKey,	
+                destTokenAccount,	
+                destPublicKey,	
+                mintPublicKey,	
+                TOKEN_PROGRAM_ID,	
+                ASSOCIATED_TOKEN_PROGRAM_ID	
+              )	
+            )	
+          }	
+          tx.add(	
+            createTransferInstruction(	
+              fromTokenAccount,	
+              destTokenAccount,	
+              fromPublicKey,	
+              1	
+            )	
+          )	
+        }	
+      }	
+      tx.recentBlockhash = (await connection.getLatestBlockhash()).blockhash	
+      tx.feePayer = publicKey	
+      // setFeedbackStatus("✍️ SIGN yer Phantom ser..")
 
-    try {
-      signed = await signTransaction(tx)
+      let signed: Transaction | undefined = undefined	
+      try {	
+        signed = await signTransaction(tx)	
+      } catch (e:any) {	
+        toast(e.message)	
+        setLoading(false)	
+        return	
+      }	
+      let signature: string | undefined = undefined	
+      try {	
+        signature = await connection.sendRawTransaction(signed.serialize())	
+        await connection.confirmTransaction(signature, 'confirmed')	
+        toast.success('Transaction successful')	
+        ga.event({	
+          action: 'multisend_success',	
+          params: { count: sending.length }	
+        })	
+        sending.map(n => {	
+          setNfts(nfts.filter(n => !sending.includes(n)))	
+          setFeedbackStatus("🤝 SUCCESS SER! If BULK packaged, wait for all of it to finish.")
+        })	
+      } catch (e:any) {	
+        setFeedbackStatus("😒 IT ERROR'D SER. Try again.")
+        toast.error(e.message)	
+        setLoading(false)	
+        ga.event({	
+          action: 'multisend_error',	
+          params: { msg: e.message }	
+        })	
 
-    } catch (e: any) {
-      toast(e.message)
-      setLoading(false)
-      setFeedbackStatus("❌ Transfer exceeds hard limit (7-8 NFTs per transfer). Or you REJECTED Phantom ser.")
-
-      return{
-        feedbackStatus,
-      }
-    }
-     
-    let signature: string | undefined = undefined
-  
-    try {
-      signature = await connection.sendRawTransaction(signed.serialize())
-    
-      await connection.confirmTransaction(signature, 'confirmed') 
-        toast.success('Transaction successful')
-        ga.event({
-          action: 'multisend_success',
-          params: { count: sending.length }
-        })
-        sending.map(n => {
-          setNfts(nfts.filter(n => !sending.includes(n)))
-        })
-        setSending([])
-        setLoading(false)
-        setFeedbackStatus("🤝 SUCCESS SER! Now off you go..")
-
-      }
-
-    catch (e: any) {
-      toast.error(e.message)
-      setLoading(false)
-      ga.event({
-        action: 'multisend_error',
-        params: { msg: e.message }
-      })
-      setFeedbackStatus("😒 IT ERROR'D SER. Try again.")
-
-
-    }
+      }	
+    }	
+    setSending([])	
+    setLoading(false)	
 
     return{
       feedbackStatus,
     }
-
-
-
-}
+  } 
 
 
 const [allowed, setAllowed] = useState(false)
@@ -257,17 +243,19 @@ const [allowed, setAllowed] = useState(false)
           </div>
           <p className=' m-2 mt-6 ml-10 text-left text-xs tracking-wider'>
             Notes:<br/>
-            1. &nbsp;Current test version supports up to 7-8 NFT transfer at a time. Live version supports unlimited transfers for TSC NFT holders.<br/>
+            1. &nbsp;<b>(UPDATED - Live now for public temporarily.)</b> Live version supports unlimited transfers for TSC NFT holders.<br/>
             2. &nbsp;All transactions are fee free. You only pay gas.<br/>
-            3. &nbsp;Unnamed NFTs are those who were most likely setup and minted in LMNFT.
+            3. &nbsp;Unnamed NFTs are those who were most likely setup and minted in LMNFT.<br/></p>
+
+          <h2 className='font-bold mt-6'>⚡ BULK NFT TRANSFER - FEE-FREE ⚡<br/></h2>
+          <p className='text-green-500 font-bold mb-6'>&nbsp;LIVE VERSION - Still open to PUBLIC for now. 👻
             </p>
-          <h2 className='font-bold m-2 mt-6'>⚡ BULK NFT TRANSFER - TRANSFER NFTS TO ANOTHER WALLET FEE-FREE ⚡</h2>
           <div className='w-full mb-4'>
           <h2 className='font-bold text-sm'> HOW MANY :&nbsp;&nbsp;&nbsp; 
           <span className='indicator-item badge-lg rounded-full bg-amber-500 text-xl text-white'>
           {sending.length}
           </span></h2>
-          <h1 className='mr-10 ml-10 mt-2 mb-4'>STATUS : {feedbackStatus} </h1>
+          <h1 className='mr-10 ml-10 mt-2 mb-4 mt-10'>STATUS : {feedbackStatus} </h1>
 
           </div>
           <div className='w-full mb-6'>

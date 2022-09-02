@@ -9,8 +9,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Shadows Instruments</title>
-        <meta name='description' content='Some Instruments' />
+        <title>Shadow Instruments</title>
+        <meta name='description' content='Just a simple Asset Manager/Suite in the Solana Blockchain. Coded in the Shadows | 👻 The Shady Class Buidl' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
