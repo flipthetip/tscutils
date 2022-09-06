@@ -80,13 +80,13 @@ const BulkTransfer : NextPage = () => {
       return	
     }	
     setFeedbackStatus(`Processing ${list.length} send request..`)	
-    setFeedbackStatus(`✍️ Sending in ${Math.ceil(list.length / 8)} packages..`)	
+    setFeedbackStatus(`✍️ Sending in ${Math.ceil(list.length / 7)} packages..`)	
     
     for (var i = 0; i < list.length / 8; i++) {	
       const tx = new Transaction()	
-      for (var j = 0; j < 8; j++) {	
-        if (list[i * 8 + j]) {	
-          const mintPublicKey = new PublicKey(list[i * 8 + j].mintAddress)	
+      for (var j = 0; j < 7; j++) {	
+        if (list[i * 7 + j]) {	
+          const mintPublicKey = new PublicKey(list[i * 7 + j].mintAddress)	
           const fromTokenAccount = await getAssociatedTokenAddress(	
             mintPublicKey,	
             publicKey	
