@@ -24,7 +24,7 @@ export const NftRow = (props: NftRowProps) => {
   let amSelected = props.selected ? ' border-amber-500 border-8 ' : ''
   return (
     <div
-      className={'nftcard shadow stats rounded m-2 border-4' + hideme + amSelected}
+      className={'nftcard stats rounded-none m-2 border-8 rounded-lg w-6/6 overflow-x-hidden lg:mx-8' + hideme + amSelected}
       onClick={() => {
         if (props.selected) {
           props.unselect()
@@ -33,10 +33,10 @@ export const NftRow = (props: NftRowProps) => {
         }
       }}
     >
-      <div className='w-full bg-stone-900'>
+      <div className='w-full bg-black text-white '>
 
-        <div className='stat-figure text-secondary truncate'>
-        <div className='text-xs stat-title text-white m-1 text-center truncate'>{props.name}</div>
+        <div className='stat-figure text-secondary overflow-x-hidden '>
+        <div className='text-xs stat-title text-white text-center overflow-x-hidden'>{props.name}</div>
         {props.owner && (
           <div className='stat-desc'>
             <h1>owner: {showfirstandlastfour(props.owner)}</h1>

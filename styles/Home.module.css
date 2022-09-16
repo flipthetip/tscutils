@@ -4,8 +4,8 @@
 
 .main {
   background: #111827;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(29, 13, 13, 0.5)), url("/sana2.png");
-  background-repeat: no-repeat;
+  background-image: url("/ky.jpg");
+  background-repeat: repeat-y;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -14,9 +14,32 @@
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  align-items: left;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   grid-column: 2;
+  letter-spacing: -0.025em;
+}
+
+.pic {
+  background-position: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.pic2 {
+  background-position: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
 
 .footer {
@@ -101,6 +124,7 @@
   letter-spacing: 0px;
   /* padding-left: 4rem; */
   font-size: 1rem;
+  letter-spacing: -0.025em;
 }
 
 .card:hover,

@@ -9,6 +9,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import client from '../client'
 import { Button } from 'antd'
+import styles from '../styles/Home.module.css'
 
 //@ts-ignore
 import { createAssociatedTokenAccountInstruction, getAssociatedTokenAddress, TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID, createTransferInstruction} from '@solana/spl-token'
@@ -17,7 +18,7 @@ import * as ga from '../lib/ga'
 
 import {Nft} from '../types'
 
-const approvedAccounts = ['Web3 Chibis in the Solana network. 3,333 chibified avatars ready to take on the metaverse and save the decentralization movement. The Shady Class is the OG NFT Collection under under W3B Industries.']
+const approvedAccounts = ['Web3 Chibis in the Solana network. 3,333 chibified avatars ready to take on the metaverse and save the decentralization movement. The Shady Class is the OG NFT Collection under under W3B Industries.' && 'vesseLs of SHADIES NFTs waiting to be awakened for their evolution. An evolution experience from The Shady Class.']
 
 
 const BulkTransfer : NextPage = () => {
@@ -220,42 +221,44 @@ const [allowed, setAllowed] = useState(false)
       <Head>
         <title>BULK NFT TRANSFER</title>
         <meta name='description' content='Send multiple NFTs at once!' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/newth.ico' />
       </Head>
       
       <div className='drawer drawer-end'>
         <input id='my-drawer' type='checkbox' className='drawer-toggle' />
-        <div className='drawer-content bg-stone-900 text-white tracking-tight text-center bg-gradient-to-r from-stone-900 to-gray-500'>
+        <div className='drawer-content bg-stone-900 text-white tracking-tight text-center bg-[url("/ky.jpg")]'>
           <Navbar sending={sending} />
-          <div className='container px-4 w-full text-left m-6'>
+
+          <div className=' w-full text-center m-6'>
             {!connected && (<h1>HOLDER VERIFICATION</h1>)}
             { connected && (<>
-            <h1 className='font-bold text-xs'>Wallet: {publicKey?.toBase58()}</h1>
-            {allowed ? <h1 className='text-sm text-green-500 mr-12'>You are a verified holder! Your support will help us build more fun stuff in Solana. 🔥 Also, you will pass token gating if we ever implement it.  ✅</h1>
+            {/* <h1 className='font-bold text-xs'>Wallet: {publicKey?.toBase58()}</h1> */}
+            {allowed ? <h1 className='text-sm font-bold text-green-500 mr-10'>VERIFIED HOLDER 👥🈯</h1>
             : 
             <a
             href="https://magiceden.io/marketplace/tshc"
             >
-            <h1 className='text-sm text-red-500 font-bold  mr-12'>You do not hold any TSC NFT. 👻 As we might token gate our features in the near future, click here to get one in secondary.</h1>
+            <h1 className='text-center text-md text-red-500 font-bold mr-10'>You do not hold any TSC/SHADIES NFT. 🤷⛔</h1>
             </a>}
             </>)
             }
           </div>
-          <p className=' m-2 mt-6 ml-10 text-left text-xs tracking-wider'>
-            Notes:<br/>
-            1. &nbsp;<b>(UPDATED - Live now for public temporarily.)</b> Live version supports unlimited transfers for TSC NFT holders.<br/>
-            2. &nbsp;All transactions are fee free. You only pay gas.<br/>
-            3. &nbsp;Unnamed NFTs are those who were most likely setup and minted in LMNFT.<br/></p>
-
-          <h2 className='font-bold mt-6'>⚡ BULK NFT TRANSFER - FEE-FREE ⚡<br/></h2>
-          <p className='text-green-500 font-bold mb-6'>&nbsp;LIVE VERSION - Still open to PUBLIC for now. 👻
-            </p>
+          
+          <div className={styles.pic}>
+          <div className='w-3/6 lg:w-3/12'>
+              <img src='/bulk.png' />
+              </div>
+          </div>
+          {/* <h2 className='font-bold mt-6'>⚡ BULK NFT TRANSFER - FEE-FREE ⚡<br/></h2> */}
+          {/* <p className='text-green-500 font-bold mb-6'>&nbsp;HOLDERS ONLY. 👻
+            </p> */}
           <div className='w-full mb-4'>
-          <h2 className='font-bold text-sm'> HOW MANY :&nbsp;&nbsp;&nbsp; 
+
+          <h2 className='font-bold text-sm'>HOW MANY :&nbsp;&nbsp;&nbsp; 
           <span className='indicator-item badge-lg rounded-full bg-amber-500 text-xl text-white'>
           {sending.length}
           </span></h2>
-          <h1 className='mr-10 ml-10 mt-2 mb-4 mt-10'>STATUS : {feedbackStatus} </h1>
+          <h1 className='mr-10 ml-10 mt-4 mb-4'>STATUS : {feedbackStatus} </h1>
 
           </div>
           <div className='w-full mb-6'>
@@ -269,7 +272,7 @@ const [allowed, setAllowed] = useState(false)
             />
           </div>
 
-            <div className='w-full mb-4'>
+            {allowed ?<div className='w-full mb-4'>
               {sending.length > 0 ? (
               <>
 
@@ -285,9 +288,9 @@ const [allowed, setAllowed] = useState(false)
 
                   <Button
                     loading={loading}
-                    id='btn-copy'
+                    id='btn-copy '
                     type='primary'
-                    className='btn max-w-sm hover:text-white hover:bg-amber-500 m-1 tracking-wider rounded-none w-6/12'
+                    className='btn max-w-sm hover:text-white hover:bg-red-500 m-1 tracking-wider rounded-none w-6/12'
                     onClick={() => {
                       // setLoading(true)
                       massSend(sending, to)
@@ -304,9 +307,20 @@ const [allowed, setAllowed] = useState(false)
               </>
             )}
           </div>
+             :                           
+             <a
+             href="https://magiceden.io/marketplace/tshc"
+             >
+             <h1 className='text-sm text-yellow-500 font-bold mb-8'>Access our UTILITIES! 👻<br/> Click here to get a Shady NFT in Magiceden!</h1>
+             </a> }
 
-          <div className='container px-4'>
-            <div className='ml-6 mr-6 mb-20 grid grid-cols-2 gap-1 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
+             <p className='m-2 mt-6 text-center text-xs tracking-wider'>
+            Notes:<br/>
+            1. &nbsp;<b>(UPDATED - Closed access to holders only.)</b><br/> Live version supports unlimited transfers for SHADIES AND TSC NFT holders.<br/>
+            2. &nbsp;All transactions are fee free. You only pay gas.<br/>
+            3. &nbsp;Unnamed NFTs are those who were most likely setup and minted in LMNFT.<br/></p>
+          <div className='w-12/12 align-center justify-center text-center rounded-lg mb-12'>
+            <div className='lg:mx-12 mb-12 mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5'>
               {nfts
                 .filter(n => n.name.toLowerCase().includes(search.toLowerCase()))
                 .sort ((a: Nft, b:Nft) => {
@@ -336,9 +350,33 @@ const [allowed, setAllowed] = useState(false)
 
           </div>
           <a href="https://discord.gg/7SrNbVyHDD">
-        <h2 className='ml-12 md:ml-20 mb-6 text-xs pt-1 pb-1 text-white text-center w-9/12 md:w-3/12 sm:w-2/12 xs:w-1/12 bg-red-700 rounded-box'>          
+        <h2 className='ml-12 md:ml-20 mb-6 text-xs pt-1 pb-1 text-white justify-center text-center w-9/12 md:w-3/12 sm:w-2/12 xs:w-1/12 bg-red-700 rounded-box'>          
         Coded in the Shadows | 👻 The Shady Class Buidl</h2>
         </a>
+
+        <div className={styles.pic}>
+          <div className='w-3/6 lg:w-2/12 mb-4'>
+              <img src='/shad.png' />
+              </div>
+          </div>
+          <div className='lg:mx-96 mb-4 mt-2 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2'>
+          <div className={styles.pic2}>
+          <div className='ml-32 w-10 h-10 lg:w-12 lg:h-12 lg:ml-80 mb-2'>
+          <a href="https://discord.gg/7SrNbVyHDD">
+              <img src='/dc.png' /> 
+              </a>
+              </div>
+              
+              </div>
+          <div className={styles.pic2}>
+          <div className='mr-32 w-10 h-10 lg:w-12 lg:h-12 lg:mr-80 mb-2'>
+          <a href="https://discord.gg/7SrNbVyHDD">
+              <img src='/twt.png' />
+              </a>
+          </div>
+          
+          </div>
+          </div>
           {/* <div className='pl-auto text-center bg-red-700 w-full'>
         <a href="https://discord.gg/b39NXR6">
         <h2 className='text-xs pt-2 pb-2 text-white bg-red-700 rounded-box'>          
