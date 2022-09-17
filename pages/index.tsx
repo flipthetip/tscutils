@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className='text-xs mt-8 justify-center text-center w-3/6 lg:w-3/12 p-4 border-4 border-violet-700 bg-gray-900 rounded-xl'>
-          <a href="https://magiceden.io/drops/vessel" className='text-lg mt-20 justify-center text-center text-white' >
+          <a href="https://mint.theshadyclass.xyz/" className='text-lg mt-20 justify-center text-center text-white' >
             {/* <h4 className='font-bold '>The vesseLs are here!</h4> */}
             <p className='text-white '>🧬VESSEL MINTING EVENT!🧬</p>
             <p className='text-white '>2000 Supply  ▪  2.5% Royalty</p>
