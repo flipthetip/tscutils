@@ -370,7 +370,7 @@ const [allowed, setAllowed] = useState(false)
               </div>
           <div className={styles.pic2}>
           <div className='mr-32 w-10 h-10 lg:w-12 lg:h-12 lg:mr-80 mb-2'>
-          <a href="https://discord.gg/7SrNbVyHDD">
+          <a href="https://twitter.com/shadies_NFT">
               <img src='/twt.png' />
               </a>
           </div>
