@@ -245,7 +245,7 @@ export const Navbar = props => {
             </Link>
           </li>
           <li>
-            <Link href='https://magiceden.io/marketplace/tshc' passHref>
+            <Link href='https://mint.theshadyclass.xyz/' passHref>
               <button className='tracking-wide font-bold uppercase'>
                 MINT HERE ✨
               </button>
