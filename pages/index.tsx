@@ -41,9 +41,9 @@ const Home: NextPage = () => {
               </div>
           </div>
 
-          <div className='text-xs mt-8 justify-center text-center w-3/6 lg:w-3/12 p-4 border-4 border-violet-700 bg-gray-900 rounded-xl'>
+          {/* <div className='text-xs mt-8 justify-center text-center w-3/6 lg:w-3/12 p-4 border-4 border-violet-700 bg-gray-900 rounded-xl'>
           <a href="https://mint.theshadyclass.xyz/" className='text-lg mt-20 justify-center text-center text-white' >
-            {/* <h4 className='font-bold '>The vesseLs are here!</h4> */}
+            <h4 className='font-bold '>The vesseLs are here!</h4>
             <p className='text-white '>🧬VESSEL MINTING EVENT!🧬</p>
             <p className='text-white '>2000 Supply  ▪  2.5% Royalty</p>
             <p className='text-white '>0.1 ◉ Whitelist  ▪ 0.25 ◉ Public</p>
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
               <img src='/meden.png' />
               </div>
           </div>
-        </div>
+        </div> */}
         
 
         <div className='text-3xl mt-8 justify-center text-center'>
@@ -94,6 +94,15 @@ const Home: NextPage = () => {
           >
           <h4 className='font-bold  md:pl-12'>THE COLLECTOR</h4>
             <p className='text-amber-500  md:pl-12'>Collect your un-used on-chain SOL.<br/></p>
+
+          </a>
+
+          <a
+            
+            className={styles.card}
+          >
+          <h4 className='font-bold text-amber-500 md:pl-12'>VESSEL 🔜</h4>
+            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> Evolve your "vesseLs" and try to get a shiny. hehe..<br/></p>
 
           </a>
 

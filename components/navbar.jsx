@@ -75,6 +75,13 @@ export const Navbar = props => {
             </Link>
           </li>
           <li>
+            <Link href='/' passHref>
+              <button className='tracking-wide font-bold uppercase'>
+                VESSELS 🧪
+              </button>
+            </Link>
+          </li>
+          <li>
             <Link href='https://magiceden.io/marketplace/tshc' passHref>
               <button className='tracking-wide uppercase'>
                 MAGICEDEN ✨
@@ -233,7 +240,7 @@ export const Navbar = props => {
           <li>
             <Link href='/' passHref>
               <button className='tracking-wide font-bold uppercase'>
-                VESSELS
+                VESSELS 🧪
               </button>
             </Link>
           </li>
