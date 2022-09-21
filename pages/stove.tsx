@@ -263,69 +263,7 @@ const Stove: NextPage = () => {
             </div>
 
 
-          {/* <div className='ml-6 mr-6 mb-20 grid grid-cols-2 gap-1 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
-              {nfts
-                .filter(n => n.name.toLowerCase().includes(search.toLowerCase()))
-                .reduce((x, y) => {
-                let nepti = y.name
-                if  (nepti in x) {
-                  return {...x, [nepti]: x[nepti].concat(y)
-                  }
-                }
-                return {...x, [nepti]: [y]}
-                  },
-                {}
 
-                
-                )
-
-                .map(n => (
-                  <NftRow
-                  key={Math.random()}
-                  name={n.name}
-                  address={n.address}
-                  mintAddress={n.mintAddress}
-                  image={n.image}
-                  symbol={n.symbol}
-                  showHidden
-                    unselect={() => {
-                      setSending(sending.filter(item => item !== n))
-                    }}
-                    select={() => {
-                      setSending([...sending, n])
-                    }}
-                    selected={sending.includes(n)}
-                  />
-                ))}
-            </div>
-
-            <div className='ml-6 mr-6 mb-20 grid grid-cols-2 gap-1 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
-              {nfts
-                .filter(n => n.name.toLowerCase().includes(search.toLowerCase()))
-                .sort ((a: Nft, b:Nft) => {
-                  if (a.name > b.name) return 1;
-                  else if (a.name < b.name) return -1;
-                  else return 0;
-                })
-                .map(n => (
-                  <NftRow
-                  key={Math.random()}
-                  name={n.name}
-                  address={n.address}
-                  mintAddress={n.mintAddress}
-                  image={n.image}
-                  symbol={n.symbol}
-                  showHidden
-                    unselect={() => {
-                      setSending(sending.filter(item => item !== n))
-                    }}
-                    select={() => {
-                      setSending([...sending, n])
-                    }}
-                    selected={sending.includes(n)}
-                  />
-                ))}
-            </div> */}
 
           </div>
           <a href="https://discord.gg/7SrNbVyHDD">

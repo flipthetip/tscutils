@@ -30,7 +30,7 @@ export const Navbar = props => {
 
           <ul
             tabIndex='0'
-            className='p-1 mt-2 shadow menu menu-compact dropdown-content bg-red-700 rounded-box w-52 pr-0'
+            className='p-1 mt-2 shadow menu menu-compact dropdown-content bg-red-700 rounded-box w-full pr-0'
           >
           <li>
             <Link href='/' passHref>
@@ -148,7 +148,7 @@ export const Navbar = props => {
 
           <ul
             tabIndex='0'
-            className='p-1 shadow menu dropdown-content bg-red-700 border-8 rounded-md rounded-none w-64'
+            className='p-1 shadow menu dropdown-content bg-red-700 border-8 rounded-md rounded-none w-72'
           >
           <li>
             <Link href='/' passHref>
@@ -161,6 +161,24 @@ export const Navbar = props => {
             <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
                 VAULT 🔐 (COMING SOON)
+              </button>
+            </Link>
+          </li>
+          <li>
+            <Link href='/' passHref>
+              <button className='tracking-wide uppercase'>
+              NFT MANAGER 🗃️ - MULTI WALLET VIEWER<br/>
+              (COMING SOON)
+                
+              </button>
+            </Link>
+          </li>
+          <li>
+            <Link href='/' passHref>
+              <button className='tracking-wide uppercase'>
+              FUND MANAGER 💰 (COMING SOON)
+              
+                
               </button>
             </Link>
           </li>

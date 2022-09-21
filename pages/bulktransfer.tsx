@@ -11,6 +11,7 @@ import client from '../client'
 import { Button } from 'antd'
 import styles from '../styles/Home.module.css'
 
+
 //@ts-ignore
 import { createAssociatedTokenAccountInstruction, getAssociatedTokenAddress, TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID, createTransferInstruction} from '@solana/spl-token'
 import { NftRow } from '../components/nftRow'
@@ -349,6 +350,8 @@ const [allowed, setAllowed] = useState(false)
             </div>
 
           </div>
+
+          
           <a href="https://discord.gg/7SrNbVyHDD">
         <h2 className='ml-12 md:ml-20 mb-6 text-xs pt-1 pb-1 text-white justify-center text-center w-9/12 md:w-3/12 sm:w-2/12 xs:w-1/12 bg-red-700 rounded-box'>          
         Coded in the Shadows | 👻 The Shady Class Buidl</h2>
@@ -385,7 +388,7 @@ const [allowed, setAllowed] = useState(false)
         </div> */}
           </div>
 
-        <div className='drawer-side'>
+        {/* <div className='drawer-side'>
           <label htmlFor='my-drawer' className='drawer-overlay'></label>
           <ul className='p-4 overflow-y-auto menu w-80 bg-base-100 text-base-content'>
               {sending.map(n => (
@@ -446,7 +449,7 @@ const [allowed, setAllowed] = useState(false)
 
 
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   )

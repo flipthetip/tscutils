@@ -105,6 +105,22 @@ const Home: NextPage = () => {
             <p className='text-amber-500  md:pl-12'><b>(SOON)</b> Evolve your <b>vesseLs</b> and try to get a shiny. hehe..<br/></p>
 
           </a>
+          <a
+            
+            className={styles.card}
+          >
+          <h4 className='font-bold text-amber-500 md:pl-12'>NFT MANAGER 🔜</h4>
+            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> View NFTs from multiple different wallets.<br/></p>
+
+          </a>
+          <a
+            
+            className={styles.card}
+          >
+          <h4 className='font-bold text-amber-500 md:pl-12'>FUND MANAGER 🔜</h4>
+            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> Send SOL or Tokens to more than 1 wallet in one go.<br/></p>
+
+          </a>
 
           <a
             
