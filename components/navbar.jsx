@@ -148,27 +148,26 @@ export const Navbar = props => {
 
           <ul
             tabIndex='0'
-            className='p-1 shadow menu dropdown-content bg-red-700 border-8 rounded-md rounded-none w-72'
+            className='p-1 shadow menu dropdown-content bg-red-700 border-4 rounded-md rounded-none w-72'
           >
           <li>
             <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
-                TRADING SUITE 🤖 (COMING SOON)
+              ♦ TRADING SUITE 🤖 (COMING SOON)
               </button>
             </Link>
           </li>
         <li>
             <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
-                VAULT 🔐 (COMING SOON)
+              ♦ VAULT 🔐 (COMING SOON)
               </button>
             </Link>
           </li>
           <li>
             <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
-              NFT MANAGER 🗃️ - MULTI WALLET VIEWER<br/>
-              (COMING SOON)
+              ♦ MULTI WALLET VIEWER 🗃️ (COMING SOON)
                 
               </button>
             </Link>
@@ -176,7 +175,7 @@ export const Navbar = props => {
           <li>
             <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
-              FUND MANAGER 💰 (COMING SOON)
+              ♦ FUND MANAGER 💰 (COMING SOON)
               
                 
               </button>
@@ -185,7 +184,7 @@ export const Navbar = props => {
           <li>
             <Link href='bulktransfer' passHref>
               <button className='tracking-wide uppercase'>
-                BULK TRANSFER ⚡
+              ♦ BULK TRANSFER ⚡
               </button>
             </Link>
           </li>
@@ -199,24 +198,11 @@ export const Navbar = props => {
           <li>
             <Link href='http://collector.theshadyclass.xyz/' passHref>
               <button className='tracking-wide uppercase'>
-                COLLECTOR 🔱
+              ♦ COLLECTOR 🔱
                 
               </button>
             </Link>
           </li>
-          {/* <li>
-            <Link href='https://magiceden.io/marketplace/tshc' passHref>
-              <button className='tracking-wide uppercase'>
-                MAGICEDEN ✨
-              </button>
-            </Link>
-          </li> */}
-            {/* <li>
-            <WalletMultiButton className='max-h-5' />
-            </li>
-            <div className=' mt-4 w-full rounded-none content-center text-xs mb-2'>
-            Coded in the Shadows | 👻 TSC Buidl
-            </div> */}
           </ul>
           </li>
           {/* <li>
@@ -256,16 +242,38 @@ export const Navbar = props => {
           </li> 
 */}
           <li>
+          <label tabIndex='0' className='btn btn-ghost'>
+          STAKING
+
+          </label>
+
+          <ul
+            tabIndex='0'
+            className='p-1 shadow menu dropdown-content bg-red-700 border-4 rounded-md rounded-none w-72'
+          >
+          <li>
             <Link href='/' passHref>
-              <button className='tracking-wide font-bold uppercase'>
-                VESSELS 🧪
+              <button className='tracking-wide uppercase'>
+              ♦ STAKING (NEW - Mission Board)
+                
               </button>
             </Link>
           </li>
           <li>
-            <Link href='https://staking.theshadyclass.xyz/' passHref>
+            <Link href='/' passHref>
+              <button className='tracking-wide uppercase'>
+              ♦ STAKING (OLD SITE)
+              
+                
+              </button>
+            </Link>
+          </li>
+          </ul>
+          </li>
+          <li>
+            <Link href='/' passHref>
               <button className='tracking-wide font-bold uppercase'>
-                STAKING
+                VESSELS 🧪
               </button>
             </Link>
           </li>
