@@ -95,12 +95,15 @@
 }
 
 .code {
-  background: #3d3b3b;
-  border-radius: 5px;
+  background: #760e0e60;
+  color: #eaeaea;
+  border-radius: 10px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin-top: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .grid {
@@ -116,6 +119,7 @@
   margin: 1rem;
   padding: 1rem;
   text-align: left;
+  letter-spacing: 0.5px;
   color: white;
   border-radius: 0px;
   transition: color 0.15s ease, border-color 0.15s ease;
@@ -123,8 +127,7 @@
   max-height: 10px;
   letter-spacing: 0px;
   /* padding-left: 4rem; */
-  font-size: 1rem;
-  letter-spacing: -0.025em;
+  font-size: 1.5rem;
 }
 
 .card:hover,

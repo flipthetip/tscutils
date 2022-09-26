@@ -68,14 +68,14 @@ export const Navbar = props => {
             </Link>
           </li>
           <li>
-            <Link href='https://staking.theshadyclass.xyz/' passHref>
+            <Link href='staking' passHref>
               <button className='tracking-wide uppercase'>
                 STAKING ⛏️
               </button>
             </Link>
           </li>
           <li>
-            <Link href='/' passHref>
+            <Link href='https://magiceden.io/marketplace/vessels' passHref>
               <button className='tracking-wide font-bold uppercase'>
                 VESSELS 🧪
               </button>
@@ -242,36 +242,14 @@ export const Navbar = props => {
           </li> 
 */}
           <li>
-          <label tabIndex='0' className='btn btn-ghost'>
-          STAKING
-
-          </label>
-
-          <ul
-            tabIndex='0'
-            className='p-1 shadow menu dropdown-content bg-red-700 border-4 rounded-md rounded-none w-72'
-          >
-          <li>
-            <Link href='/' passHref>
-              <button className='tracking-wide uppercase'>
-              ♦ STAKING (NEW - Mission Board)
-                
+            <Link href='staking' passHref>
+              <button className='tracking-wide font-bold uppercase'>
+                STAKING (UP SOON!)
               </button>
             </Link>
           </li>
           <li>
-            <Link href='/' passHref>
-              <button className='tracking-wide uppercase'>
-              ♦ STAKING (OLD SITE)
-              
-                
-              </button>
-            </Link>
-          </li>
-          </ul>
-          </li>
-          <li>
-            <Link href='/' passHref>
+            <Link href='https://magiceden.io/marketplace/vessels' passHref>
               <button className='tracking-wide font-bold uppercase'>
                 VESSELS 🧪
               </button>

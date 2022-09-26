@@ -358,8 +358,13 @@ const [allowed, setAllowed] = useState(false)
         </a>
 
         <div className={styles.pic}>
-          <div className='w-3/6 lg:w-2/12 mb-4'>
+          <div className='w-3/6 lg:w-2/12 mb-2'>
               <img src='/shad.png' />
+              </div>
+          </div>
+          <div className={styles.pic}>
+          <div className='w-4/12 lg:w-1/12 mt-2'>
+              <img src='/solwyt2.png' />
               </div>
           </div>
           <div className='lg:mx-96 mb-4 mt-2 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2'>

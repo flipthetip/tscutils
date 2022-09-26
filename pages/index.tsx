@@ -26,19 +26,14 @@ const Home: NextPage = () => {
           {/* <div className='pl-20 mt-2 w-9/12 md:w-3/12 sm:w-3/12 xs:w-3/12 rounded-none justify-center'>
               <img src='/arc.png' />
           </div> */}
-          <div className='mt-12 w-3/6 md:w-3/12 sm:w-3/12 xs:w-3/12 rounded-full align-items-center justify-center'>
+          <div className='mt-12 lg:w-1/6 w-4/6 rounded-xl align-items-center justify-center'>
               <img src='/vessel.gif' />
           </div>
         {/* <p className={styles.description}>
           Get started by checking out our tools below<br/>
         </p> */}
                   <div className='mt-12 w-3/6 md:w-3/12 sm:w-3/12 xs:w-3/12 rounded-full align-items-center justify-center'>
-              <img src='/txt.png' />
-          </div>
-          <div className={styles.pic}>
-          <div className='w-3/6 lg:w-12/12 mt-4'>
-              <img src='/solfull.png' />
-              </div>
+              <img src='/util.png' />
           </div>
 
           {/* <div className='text-xs mt-8 justify-center text-center w-3/6 lg:w-3/12 p-4 border-4 border-violet-700 bg-gray-900 rounded-xl'>
@@ -59,15 +54,15 @@ const Home: NextPage = () => {
 
         <div className='text-3xl mt-8 justify-center text-center'>
           <a  className='text-lg justify-center text-center text-white' >
-            <h4 className='font-bold'>UTILITIES</h4>
+            <h4 className='font-bold'>SHADIES TOOL KIT</h4>
           </a>
 
         </div>
 
         <div className='grid grid-col-2 text-xs'>
           <a href="bulktransfer" className={styles.card} >
-            <h4 className='font-bold md:pl-12'>BULK NFT TRANSFER</h4>
-            <p className='text-amber-500 md:pl-12'>Transfer more than 1 NFT to another wallet in 1 go. Fee-free. Gas only.</p>
+            <h4 className='font-bold md:pl-12'>♦ BULK NFT TRANSFER</h4>
+            <p className='text-amber-300 md:pl-12'>Transfer more than 1 NFT to another wallet in 1 go. Fee-free. Gas only.</p>
           </a>
 
 
@@ -80,11 +75,11 @@ const Home: NextPage = () => {
 
 
           <a
-            href="https://staking.theshadyclass.xyz/"
+            href="staking"
             className={styles.card}
           >
-          <h4 className='font-bold  md:pl-12'>STAKING PLATFORM</h4>
-            <p className='text-amber-500 md:pl-12'>Stake your TSC NFTs for $CRIM token yields. (Reopening Soon!)<br/></p>
+          <h4 className='font-bold  md:pl-12'>♦ STAKING PLATFORM</h4>
+            <p className='text-amber-300 md:pl-12'>Stake your TSC NFTs for $CRIM token yields. (Reopening Soon!)<br/></p>
 
           </a>
 
@@ -92,8 +87,8 @@ const Home: NextPage = () => {
             href="http://collector.theshadyclass.xyz/"
             className={styles.card}
           >
-          <h4 className='font-bold  md:pl-12'>THE COLLECTOR</h4>
-            <p className='text-amber-500  md:pl-12'>Collect your un-used on-chain SOL.<br/></p>
+          <h4 className='font-bold  md:pl-12'>♦ THE COLLECTOR</h4>
+            <p className='text-amber-300  md:pl-12'>Collect your un-used on-chain SOL.<br/></p>
 
           </a>
 
@@ -101,33 +96,24 @@ const Home: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>VESSEL 🔜</h4>
-            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> Evolve your <b>vesseLs</b> and try to get a shiny. hehe..<br/></p>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ VESSEL 🔜</h4>
+            <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Evolve your <b>vesseLs</b> and try to get a shiny. hehe..<br/></p>
 
           </a>
           <a
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>NFT MANAGER 🔜</h4>
-            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> View NFTs from multiple different wallets.<br/></p>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ NFT MANAGER 🔜</h4>
+            <p className='text-amber-300  md:pl-12'><b>(SOON)</b> View NFTs from multiple different wallets.<br/></p>
 
           </a>
           <a
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>FUND MANAGER 🔜</h4>
-            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> Send SOL or Tokens to more than 1 wallet in one go.<br/></p>
-
-          </a>
-
-          <a
-            
-            className={styles.card}
-          >
-          <h4 className='font-bold text-amber-500 md:pl-12'>AUTOMATION SUITE 🔜</h4>
-            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> NFT Sniper and Automated Trading in Solana Marketplaces.<br/></p>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ FUND MANAGER 🔜</h4>
+            <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Send SOL or Tokens to more than 1 wallet in one go.<br/></p>
 
           </a>
 
@@ -135,8 +121,17 @@ const Home: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>THE VAULT 🔜</h4>
-            <p className='text-amber-500  md:pl-12'><b>(SOON)</b> Web-based on-chain NFT Ledger.<br/></p>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ AUTOMATION SUITE 🔜</h4>
+            <p className='text-amber-300  md:pl-12'><b>(SOON)</b> NFT Sniper and Automated Trading in Solana Marketplaces.<br/></p>
+
+          </a>
+
+          <a
+            
+            className={styles.card}
+          >
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ THE VAULT 🔜</h4>
+            <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Web-based on-chain NFT Ledger.<br/></p>
 
           </a>
 
@@ -165,8 +160,13 @@ const Home: NextPage = () => {
         Coded in the Shadows | 👻 The Shady Class Buidl</h2>
         </a>
         <div className={styles.pic}>
-          <div className='w-3/6 lg:w-3/12 mb-8'>
+          <div className='w-3/6 lg:w-3/12 mb-2'>
               <img src='/shad.png' />
+              </div>
+          </div>
+          <div className={styles.pic}>
+          <div className='w-4/12 lg:w-1/12 mt-2'>
+              <img src='/solwyt2.png' />
               </div>
           </div>
           <div className='lg:mx-96 mb-4 mt-2 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2'>
