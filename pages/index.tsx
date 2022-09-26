@@ -32,8 +32,10 @@ const Home: NextPage = () => {
         {/* <p className={styles.description}>
           Get started by checking out our tools below<br/>
         </p> */}
-                  <div className='mt-12 w-3/6 md:w-3/12 sm:w-3/12 xs:w-3/12 rounded-full align-items-center justify-center'>
+        <div className={styles.pic}>
+          <div className='w-5/6 lg:w-9/12 mt-12'>
               <img src='/util.png' />
+              </div>
           </div>
 
           {/* <div className='text-xs mt-8 justify-center text-center w-3/6 lg:w-3/12 p-4 border-4 border-violet-700 bg-gray-900 rounded-xl'>
@@ -96,7 +98,7 @@ const Home: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>♦ VESSEL 🔜</h4>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ VESSEL ⌛</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Evolve your <b>vesseLs</b> and try to get a shiny. hehe..<br/></p>
 
           </a>
@@ -104,7 +106,7 @@ const Home: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>♦ NFT MANAGER 🔜</h4>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ NFT MANAGER ⌛</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> View NFTs from multiple different wallets.<br/></p>
 
           </a>
@@ -112,7 +114,7 @@ const Home: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>♦ FUND MANAGER 🔜</h4>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ FUND MANAGER ⌛</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Send SOL or Tokens to more than 1 wallet in one go.<br/></p>
 
           </a>
@@ -121,7 +123,7 @@ const Home: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>♦ AUTOMATION SUITE 🔜</h4>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ AUTOMATION SUITE ⌛</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> NFT Sniper and Automated Trading in Solana Marketplaces.<br/></p>
 
           </a>
@@ -130,7 +132,7 @@ const Home: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>♦ THE VAULT 🔜</h4>
+          <h4 className='font-bold text-amber-500 md:pl-12'>♦ THE VAULT ⌛</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Web-based on-chain NFT Ledger.<br/></p>
 
           </a>

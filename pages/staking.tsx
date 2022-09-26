@@ -42,7 +42,7 @@ const Staking: NextPage = () => {
 
         <div className='text-3xl mt-8 mb-8 justify-center text-center'>
           <a className='text-lg justify-center text-center text-white' >
-            <h4 className='font-bold'>CHOOSE YOUR JOURNEY</h4>
+            <h4 className='font-bold'>CHOOSE YOUR JOURNEY ⌛</h4>
             <p className='text-sm'>Stake your TSC Gen1 NFTs for $CRIM token yields.</p>
           </a>
 

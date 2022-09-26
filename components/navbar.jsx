@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export const Navbar = props => {
   return (
-    <div className='navbar bg-none text-white text-xs max-h-1 md:pl-2 pr-12'>
+    <div className='navbar bg-none text-white text-xs max-h-1 w-full md:pl-2 pr-12'>
       <div className='navbar-start'>       
         <div className='dropdown'>
           <label tabIndex='0' className='btn btn-ghost lg:hidden'>
@@ -30,7 +30,7 @@ export const Navbar = props => {
 
           <ul
             tabIndex='0'
-            className='p-1 mt-2 shadow menu menu-compact dropdown-content bg-red-700 rounded-box w-full pr-0'
+            className='p-1 mt-2 shadow menu menu-compact dropdown-content bg-red-700 rounded-box w-6/6 pr-0'
           >
           <li>
             <Link href='/' passHref>
