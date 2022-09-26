@@ -50,7 +50,7 @@ const Staking: NextPage = () => {
 
         <div className='grid grid-col-2 text-sm w-5/6 lg:w-4/12'>
           <a
-            href="/"
+            
             className={styles.code} >
             <h4 className='font-bold md:pl-12'>♦ EXPEDITION (2x)</h4>
             <p className='text-amber-300 md:pl-12'>Expedition staking has a minimum lock period of 15 days.<br />
@@ -61,7 +61,7 @@ const Staking: NextPage = () => {
           <br />
           <br />
           <a
-            href="/"
+            
             className={styles.code} >
             <h4 className='font-bold md:pl-12'>♦ QUEST</h4>
             <p className='text-amber-300 md:pl-12'>Quest staking has no lock period.<br />
@@ -78,7 +78,7 @@ const Staking: NextPage = () => {
               Access it here.</p>
               <br />
               <p className='text-xs md:pl-12'>
-              Note: This staking pool doesn't reward $CRIM anymore.</p>
+              Note: This staking pool does not reward $CRIM anymore.</p>
 
           </a>
  
