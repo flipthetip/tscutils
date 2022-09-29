@@ -50,7 +50,7 @@ const Staking: NextPage = () => {
 
         <div className='grid grid-col-2 text-sm w-5/6 lg:w-4/12'>
           <a
-            
+            href="https://staking2x.theshadyclass.xyz/29MgtLuX8ByGMZoreUoY7hsP2YY935gJ3wRB1fhiSF8o"
             className={styles.code} >
             <h4 className='font-bold md:pl-12'>♦ EXPEDITION (2x)</h4>
             <p className='text-amber-300 md:pl-12'>Expedition staking has a minimum lock period of 15 days.<br />
@@ -61,7 +61,7 @@ const Staking: NextPage = () => {
           <br />
           <br />
           <a
-            
+            href="https://staking1x.theshadyclass.xyz/zNt5nnEaL87rG9DT2cxvdVMf8sLBe6qEuZK8D5K4r9M"
             className={styles.code} >
             <h4 className='font-bold md:pl-12'>♦ QUEST</h4>
             <p className='text-amber-300 md:pl-12'>Quest staking has no lock period.<br />
