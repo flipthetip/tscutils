@@ -30,15 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/bulktransfer": [
+    "/tube": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/bulktransfer.js"
-    ],
-    "/staking": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/staking.js"
+      "static/chunks/pages/tube.js"
     ]
   },
   "ampFirstPages": []

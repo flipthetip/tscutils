@@ -95,10 +95,10 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            
+            href="tube"
             className={styles.card}
           >
-          <h4 className='font-bold text-amber-500 md:pl-12'>♦ VESSEL ⌛</h4>
+          <h4 className='font-bold md:pl-12'>♦ VESSEL (TUBE NOW ON DEVNET)</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Evolve your <b>vesseLs</b> and try to get a shiny. hehe..<br/></p>
 
           </a>

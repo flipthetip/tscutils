@@ -244,17 +244,43 @@ export const Navbar = props => {
           <li>
             <Link href='staking' passHref>
               <button className='tracking-wide font-bold uppercase'>
-                STAKING (UP SOON!)
+                STAKING (UP NOW!)
               </button>
             </Link>
           </li>
           <li>
+          <label tabIndex='0' className='btn btn-ghost'>
+          VESSELS 🧪
+
+          </label>
+
+          <ul
+            tabIndex='0'
+            className='p-1 shadow menu dropdown-content bg-red-700 border-4 rounded-md rounded-none w-72'
+          >
+          <li>
+            <Link href='tube' passHref>
+              <button className='tracking-wide uppercase'>
+              ♦ THE TUBE (Devnet)
+              </button>
+            </Link>
+          </li>
+        <li>
+            <Link href='https://magiceden.io/marketplace/vessels' passHref>
+              <button className='tracking-wide uppercase'>
+              ♦ BUY ON MAGICEDEN 🧪
+              </button>
+            </Link>
+          </li>
+          </ul>
+          </li>
+          {/* <li>
             <Link href='https://magiceden.io/marketplace/vessels' passHref>
               <button className='tracking-wide font-bold uppercase'>
                 VESSELS 🧪
               </button>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href='https://magiceden.io/marketplace/tshc' passHref>
               <button className='tracking-wide font-bold uppercase'>

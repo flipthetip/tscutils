@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { Navbar } from '../components/navbar'
 import styles from '../styles/Home.module.css'
 
-const randomStove: NextPage = () => {
+const tube: NextPage = () => {
 
 
   return (
@@ -115,8 +115,8 @@ const randomStove: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold  md:pl-12'>3. REQUEST DEMO $CRIM TOKEN IN DISCORD</h4>
-            <p className='text-amber-500  md:pl-12'>Tag Yunuk in discord to request for Test $CRIM tokens.<br/></p>
+          <h4 className='font-bold  md:pl-12'>3. REQUEST DEVNET $CRIM TOKEN</h4>
+            <p className='text-amber-500  md:pl-12'>Tag Yunuk or Traffy in discord to request for Test $CRIM tokens.<br/></p>
 
           </a>
 
@@ -124,7 +124,7 @@ const randomStove: NextPage = () => {
             href="https://632f77cdc6f2620008d50a32--sparkling-alpaca-c3da01.netlify.app/recipe/D2bkk3xuBKSpxhyUGyPE1zjnEMi26a3WpCJwtBpc7uoV"
             className={styles.card}
           >
-          <h4 className='font-bold  md:pl-12'>4. PROCEED TO DEMO TUBE SITE HERE</h4>
+          <h4 className='font-bold  md:pl-12'>4. GO TO DEVNET TUBE SITE HERE</h4>
             <p className='text-amber-500  md:pl-12'>Evolution duration is 5mins per evolution.<br/></p>
 
           </a>
@@ -158,16 +158,17 @@ const randomStove: NextPage = () => {
             
             className={styles.card}
           >
-          <h4 className='font-bold  md:pl-12'>8. SHAKE THE TUBE. CONFIRM ALL WALLET PROMPTS.</h4>
+          <h4 className='font-bold  md:pl-12'>8. SHAKE THE TUBE.<br/><br/> CONFIRM ALL WALLET PROMPTS.</h4>
             <p className='text-amber-500  md:pl-12'>Around 6-7 prompts. Will cost around 0.03-0.04 SOL.<br/></p>
 
           </a>
-
+          <br/>
+          <br/>
           <a
             
             className={styles.card}
           >
-          <h2 className='font-bold text-amber-500 md:pl-12'>⚜️ GO TO DEMO SITE HERE ⚜️</h2>
+          <h2 className='font-bold text-amber-500 md:pl-12'>⚜️ GO TO DEVNET SITE HERE ⚜️</h2>
           {/* <p className='text-white md:pl-12'>Advanced and Free Access to holders. Check out our NFT collection in Magiceden.<br/></p> */}
 
           </a>
@@ -230,4 +231,4 @@ const randomStove: NextPage = () => {
   )
 }
 
-export default randomStove
+export default tube
