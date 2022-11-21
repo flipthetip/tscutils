@@ -77,15 +77,6 @@ const Home: NextPage = () => {
 
 
           <a
-            href="staking"
-            className={styles.card}
-          >
-          <h4 className='font-bold  md:pl-12'>♦ STAKING PLATFORM</h4>
-            <p className='text-amber-300 md:pl-12'>Stake your TSC NFTs for $CRIM token yields. (Reopening Soon!)<br/></p>
-
-          </a>
-
-          <a
             href="http://collector.theshadyclass.xyz/"
             className={styles.card}
           >
@@ -93,13 +84,28 @@ const Home: NextPage = () => {
             <p className='text-amber-300  md:pl-12'>Collect your un-used on-chain SOL.<br/></p>
 
           </a>
+          <a
+            href="fm"
+            className={styles.card}
+          >
+          <h4 className='font-bold md:pl-12'>♦ FUND MANAGER ⌛ (LIVE - NEW)</h4>
+            <p className='text-amber-300  md:pl-12'><b></b> Mass send SOL/SPL Token to many wallets at once.<br/></p>
 
+          </a>
           <a
             href="tube"
             className={styles.card}
           >
           <h4 className='font-bold md:pl-12'>♦ VESSEL (TUBE NOW ON DEVNET)</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Evolve your <b>vesseLs</b> and try to get a shiny. hehe..<br/></p>
+
+          </a>
+          <a
+            href="staking"
+            className={styles.card}
+          >
+          <h4 className='font-bold  md:pl-12'>♦ STAKING PLATFORM</h4>
+            <p className='text-amber-300 md:pl-12'>Stake your TSC NFTs for $CRIM token yields. (Reopening Soon!)<br/></p>
 
           </a>
           <a
@@ -110,15 +116,6 @@ const Home: NextPage = () => {
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> View NFTs from multiple different wallets.<br/></p>
 
           </a>
-          <a
-            
-            className={styles.card}
-          >
-          <h4 className='font-bold text-amber-500 md:pl-12'>♦ FUND MANAGER ⌛</h4>
-            <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Send SOL or Tokens to more than 1 wallet in one go.<br/></p>
-
-          </a>
-
           <a
             
             className={styles.card}
@@ -142,7 +139,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
           <h2 className='font-bold text-white md:pl-12'>BECOME A SHADOW</h2>
-          <p className='text-white md:pl-12'>Advanced and Free Access to holders. Check out our NFT collection in Magiceden.<br/></p>
+          <p className='text-white md:pl-12'>Advanced and Free Access to tools to holders.<br/> Check out our NFT collection in Magiceden.<br/></p>
 
           </a>
           <br/>

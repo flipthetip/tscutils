@@ -75,6 +75,15 @@ export const Navbar = props => {
             </Link>
           </li>
           <li>
+            <Link href='fm' passHref>
+              <button className='tracking-wide uppercase'>
+              ♦ FUND MANAGER 💰 (LIVE - NEW)
+              
+                
+              </button>
+            </Link>
+          </li>
+          <li>
             <Link href='https://magiceden.io/marketplace/vessels' passHref>
               <button className='tracking-wide font-bold uppercase'>
                 VESSELS 🧪
@@ -173,9 +182,9 @@ export const Navbar = props => {
             </Link>
           </li>
           <li>
-            <Link href='/' passHref>
+            <Link href='fm' passHref>
               <button className='tracking-wide uppercase'>
-              ♦ FUND MANAGER 💰 (COMING SOON)
+              ♦ FUND MANAGER 💰 (LIVE - NEW)
               
                 
               </button>
