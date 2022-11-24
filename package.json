@@ -12,8 +12,6 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.6",
-    "@bonfida/spl-name-service": "^0.1.40",
-    "@glasseaters/hydra-sdk": "^0.3.2",
     "@jsonforms/core": "^2.5.2",
     "@jsonforms/material-renderers": "^2.5.2",
     "@jsonforms/react": "^2.5.2",
