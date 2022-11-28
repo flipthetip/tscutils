@@ -75,9 +75,9 @@ export const Navbar = props => {
             </Link>
           </li>
           <li>
-            <Link href='fm' passHref>
+            <Link href='https://fm.theshadyclass.xyz/' passHref>
               <button className='tracking-wide uppercase'>
-              ♦ FUND MANAGER 💰 (LIVE - NEW)
+              FUND MANAGER 💰
               
                 
               </button>
@@ -182,7 +182,7 @@ export const Navbar = props => {
             </Link>
           </li>
           <li>
-            <Link href='fm' passHref>
+            <Link href='https://fm.theshadyclass.xyz/' passHref>
               <button className='tracking-wide uppercase'>
               ♦ FUND MANAGER 💰 (LIVE - NEW)
               

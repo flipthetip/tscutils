@@ -85,7 +85,7 @@ const Home: NextPage = () => {
 
           </a>
           <a
-            href="fm"
+            href="https://fm.theshadyclass.xyz/"
             className={styles.card}
           >
           <h4 className='font-bold md:pl-12'>♦ FUND MANAGER ⌛ (LIVE - NEW)</h4>
