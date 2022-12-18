@@ -206,14 +206,14 @@ const BulkTransfer: NextPage = () => {
     }
   }, [publicKey?.toBase58()])
 
-  useMemo(() => {
-    nfts.map((nft) => {
-      if (approvedAccounts.includes(nft.description)) {
-        console.log('approved')
-        setAllowed(true)
-      }
-    })
-  }, [nfts])
+  // useMemo(() => {
+  //   nfts.map((nft) => {
+  //     if (approvedAccounts.includes(nft.description)) {
+  //       console.log('approved')
+  //       setAllowed(true)
+  //     }
+  //   })
+  // }, [nfts])
 
   return (
     <div>
