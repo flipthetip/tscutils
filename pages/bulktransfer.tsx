@@ -19,7 +19,7 @@ import * as ga from '../lib/ga'
 
 import { Nft } from '../types'
 
-const approvedAccounts = ['Web3 Chibis in the Solana network. 3,333 chibified avatars ready to take on the metaverse and save the decentralization movement. The Shady Class is the OG NFT Collection under under W3B Industries.', 'vesseLs of SHADIES NFTs waiting to be awakened for their evolution. An evolution experience from The Shady Class.']
+// const approvedAccounts = ['Web3 Chibis in the Solana network. 3,333 chibified avatars ready to take on the metaverse and save the decentralization movement. The Shady Class is the OG NFT Collection under under W3B Industries.', 'vesseLs of SHADIES NFTs waiting to be awakened for their evolution. An evolution experience from The Shady Class.']
 
 
 const BulkTransfer: NextPage = () => {
@@ -187,33 +187,33 @@ const BulkTransfer: NextPage = () => {
     }
   `
 
-  useMemo(() => {
-    if (publicKey?.toBase58()) {
-      client
-        .query({
-          query: GET_NFTS,
-          variables: {
-            owners: [publicKey?.toBase58()],
-            offset: 0,
-            limit: 10000
-          }
-        })
-        .then(res => setNfts(res.data.nfts))
-    } else {
-      setNfts([])
-      setSending([])
-      setTo('')
-    }
-  }, [publicKey?.toBase58()])
+  // useMemo(() => {
+  //   if (publicKey?.toBase58()) {
+  //     client
+  //       .query({
+  //         query: GET_NFTS,
+  //         variables: {
+  //           owners: [publicKey?.toBase58()],
+  //           offset: 0,
+  //           limit: 10000
+  //         }
+  //       })
+  //       .then(res => setNfts(res.data.nfts))
+  //   } else {
+  //     setNfts([])
+  //     setSending([])
+  //     setTo('')
+  //   }
+  // }, [publicKey?.toBase58()])
 
-  useMemo(() => {
-    nfts.map((nft) => {
-      if (approvedAccounts.includes(nft.description)) {
-        console.log('approved')
-        setAllowed(true)
-      }
-    })
-  }, [nfts])
+  // useMemo(() => {
+  //   nfts.map((nft) => {
+  //     if (approvedAccounts.includes(nft.description)) {
+  //       console.log('approved')
+  //       setAllowed(true)
+  //     }
+  //   })
+  // }, [nfts])
 
   return (
     <div>
@@ -231,10 +231,10 @@ const BulkTransfer: NextPage = () => {
           <Navbar sending={sending} />
 
           <div className=' w-full text-center m-6'>
-            {!connected && (<h1>HOLDER VERIFICATION</h1>)}
-            {connected && (<>
+            {/* {!connected && (<h1>HOLDER VERIFICATION</h1>)}
+            {connected && (<> */}
               {/* <h1 className='font-bold text-xs'>Wallet: {publicKey?.toBase58()}</h1> */}
-              {allowed ? <h1 className='text-sm font-bold text-green-500 mr-10'>VERIFIED HOLDER 👥🈯</h1>
+              {/* {allowed ? <h1 className='text-sm font-bold text-green-500 mr-10'>VERIFIED HOLDER 👥🈯</h1>
                 :
                 <a
                   href="https://magiceden.io/marketplace/tshc"
@@ -242,7 +242,7 @@ const BulkTransfer: NextPage = () => {
                   <h1 className='text-center text-md text-red-500 font-bold mr-10'>You do not hold any TSC/SHADIES NFT. 🤷⛔</h1>
                 </a>}
             </>)
-            }
+            } */}
           </div>
 
           <div className={styles.pic}>
@@ -273,7 +273,8 @@ const BulkTransfer: NextPage = () => {
             />
           </div>
 
-          {allowed ? <div className='w-full mb-4'>
+          {/* {allowed ?  */}
+          <div className='w-full mb-4'>
             {sending.length > 0 ? (
               <>
 
@@ -308,16 +309,17 @@ const BulkTransfer: NextPage = () => {
               </>
             )}
           </div>
-            :
+            {/* :
             <a
               href="https://magiceden.io/marketplace/tshc"
             >
               <h1 className='text-sm text-amber-300 font-bold mb-8'>Access our UTILITIES! 👻<br /> Click here to get a Shady NFT in Magiceden!</h1>
-            </a>}
+            </a>} */}
 
           <p className='m-2 mt-6 text-center text-xs tracking-wider'>
             Notes:<br />
-            1. &nbsp;<b>(UPDATED - Closed access to holders only.)</b><br /> Live version supports unlimited transfers for SHADIES AND TSC NFT holders.<br />
+            {/* 1. &nbsp;<b>(UPDATED - Closed access to holders only.)</b><br /> Live version supports unlimited transfers for SHADIES AND TSC NFT holders.<br /> */}
+            1. &nbsp;<b>(UPDATED - Open for public for a limited time.)</b><br />
             2. &nbsp;All transactions are fee free. You only pay gas.<br />
             3. &nbsp;Unnamed NFTs are those who were most likely setup and minted in LMNFT.<br /></p>
           <div className='w-12/12 align-center justify-center text-center rounded-lg mb-12'>
