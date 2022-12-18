@@ -187,33 +187,33 @@ const BulkTransfer: NextPage = () => {
     }
   `
 
-  // useMemo(() => {
-  //   if (publicKey?.toBase58()) {
-  //     client
-  //       .query({
-  //         query: GET_NFTS,
-  //         variables: {
-  //           owners: [publicKey?.toBase58()],
-  //           offset: 0,
-  //           limit: 10000
-  //         }
-  //       })
-  //       .then(res => setNfts(res.data.nfts))
-  //   } else {
-  //     setNfts([])
-  //     setSending([])
-  //     setTo('')
-  //   }
-  // }, [publicKey?.toBase58()])
+  useMemo(() => {
+    if (publicKey?.toBase58()) {
+      client
+        .query({
+          query: GET_NFTS,
+          variables: {
+            owners: [publicKey?.toBase58()],
+            offset: 0,
+            limit: 10000
+          }
+        })
+        .then(res => setNfts(res.data.nfts))
+    } else {
+      setNfts([])
+      setSending([])
+      setTo('')
+    }
+  }, [publicKey?.toBase58()])
 
-  // useMemo(() => {
-  //   nfts.map((nft) => {
-  //     if (approvedAccounts.includes(nft.description)) {
-  //       console.log('approved')
-  //       setAllowed(true)
-  //     }
-  //   })
-  // }, [nfts])
+  useMemo(() => {
+    nfts.map((nft) => {
+      if (approvedAccounts.includes(nft.description)) {
+        console.log('approved')
+        setAllowed(true)
+      }
+    })
+  }, [nfts])
 
   return (
     <div>
