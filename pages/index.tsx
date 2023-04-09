@@ -137,11 +137,11 @@ const Home: NextPage = () => {
           <a
             href="https://magiceden.io/marketplace/tshc"
             className={styles.card}
-          > */}
+          >
           <h2 className='font-bold text-white md:pl-12'>BECOME A SHADOW</h2>
           <p className='text-white md:pl-12'>Advanced and Free Access to tools to holders.<br/> Check out our NFT collection in Magiceden.<br/></p>
 
-          </a>
+          </a> */}
           <br/>
           <br/>
         </div>
