@@ -3,8 +3,8 @@
 }
 
 .main {
-  background: #111827;
-  background-image: url("/ky.jpg");
+  background: #2e2e2e;
+  /* background-image: url("/ky.jpg"); */
   background-repeat: repeat-y;
   background-position: center;
   background-size: cover;

@@ -39,7 +39,7 @@ export const Navbar = props => {
               </button>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
                 TRADING SUITE 🤖
@@ -52,7 +52,7 @@ export const Navbar = props => {
                 VAULT 🔐
               </button>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href='bulktransfer' passHref>
               <button className='tracking-wide uppercase'>
@@ -77,19 +77,19 @@ export const Navbar = props => {
           <li>
             <Link href='https://fm.theshadyclass.xyz/' passHref>
               <button className='tracking-wide uppercase'>
-              FUND MANAGER 💰
+              TOKEN BAZOOKA 💰
               
                 
               </button>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='https://magiceden.io/marketplace/vessels' passHref>
               <button className='tracking-wide font-bold uppercase'>
                 VESSELS 🧪
               </button>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href='https://magiceden.io/marketplace/tshc' passHref>
               <button className='tracking-wide uppercase'>
@@ -159,7 +159,7 @@ export const Navbar = props => {
             tabIndex='0'
             className='p-1 shadow menu dropdown-content bg-red-700 border-4 rounded-md rounded-none w-72'
           >
-          <li>
+          {/* <li>
             <Link href='/' passHref>
               <button className='tracking-wide uppercase'>
               ♦ TRADING SUITE 🤖 (COMING SOON)
@@ -180,11 +180,11 @@ export const Navbar = props => {
                 
               </button>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href='https://fm.theshadyclass.xyz/' passHref>
               <button className='tracking-wide uppercase'>
-              ♦ FUND MANAGER 💰 (LIVE - NEW)
+              ♦ TOKEN BAZOOKA 💰
               
                 
               </button>
@@ -253,11 +253,11 @@ export const Navbar = props => {
           <li>
             <Link href='staking' passHref>
               <button className='tracking-wide font-bold uppercase'>
-                STAKING (UP NOW!)
+                STAKING
               </button>
             </Link>
           </li>
-          <li>
+          {/* <li>
           <label tabIndex='0' className='btn btn-ghost'>
           VESSELS 🧪
 
@@ -282,7 +282,7 @@ export const Navbar = props => {
             </Link>
           </li>
           </ul>
-          </li>
+          </li> */}
           {/* <li>
             <Link href='https://magiceden.io/marketplace/vessels' passHref>
               <button className='tracking-wide font-bold uppercase'>

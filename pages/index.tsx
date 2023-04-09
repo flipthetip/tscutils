@@ -26,9 +26,9 @@ const Home: NextPage = () => {
           {/* <div className='pl-20 mt-2 w-9/12 md:w-3/12 sm:w-3/12 xs:w-3/12 rounded-none justify-center'>
               <img src='/arc.png' />
           </div> */}
-          <div className='mt-12 lg:w-1/6 w-4/6 rounded-xl align-items-center justify-center'>
+          {/* <div className='mt-12 lg:w-1/6 w-4/6 rounded-xl align-items-center justify-center'>
               <img src='/vessel.gif' />
-          </div>
+          </div> */}
         {/* <p className={styles.description}>
           Get started by checking out our tools below<br/>
         </p> */}
