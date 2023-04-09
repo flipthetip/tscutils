@@ -56,7 +56,7 @@ const Home: NextPage = () => {
 
         <div className='text-3xl mt-8 justify-center text-center'>
           <a  className='text-lg justify-center text-center text-white' >
-            <h4 className='font-bold'>SHADIES TOOL KIT</h4>
+            <h4 className='font-bold tracking-wider'>SHADIES TOOL KIT</h4>
           </a>
 
         </div>
@@ -88,27 +88,27 @@ const Home: NextPage = () => {
             href="https://fm.theshadyclass.xyz/"
             className={styles.card}
           >
-          <h4 className='font-bold md:pl-12'>♦ FUND MANAGER ⌛ (LIVE - NEW)</h4>
+          <h4 className='font-bold md:pl-12'>♦ TOKEN BAZOOKA</h4>
             <p className='text-amber-300  md:pl-12'><b></b> Mass send SOL/SPL Token to many wallets at once.<br/></p>
 
           </a>
-          <a
+          {/* <a
             href="tube"
             className={styles.card}
           >
           <h4 className='font-bold md:pl-12'>♦ VESSEL (TUBE NOW ON DEVNET)</h4>
             <p className='text-amber-300  md:pl-12'><b>(SOON)</b> Evolve your <b>vesseLs</b> and try to get a shiny. hehe..<br/></p>
 
-          </a>
+          </a> */}
           <a
             href="staking"
             className={styles.card}
           >
           <h4 className='font-bold  md:pl-12'>♦ STAKING PLATFORM</h4>
-            <p className='text-amber-300 md:pl-12'>Stake your TSC NFTs for $CRIM token yields. (Reopening Soon!)<br/></p>
+            <p className='text-amber-300 md:pl-12'>Stake your TSC NFTs for $CRIM token yields. (UNSTAKE YOUR NFTS)<br/></p>
 
           </a>
-          <a
+          {/* <a
             
             className={styles.card}
           >
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
           <a
             href="https://magiceden.io/marketplace/tshc"
             className={styles.card}
-          >
+          > */}
           <h2 className='font-bold text-white md:pl-12'>BECOME A SHADOW</h2>
           <p className='text-white md:pl-12'>Advanced and Free Access to tools to holders.<br/> Check out our NFT collection in Magiceden.<br/></p>
 
